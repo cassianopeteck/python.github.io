@@ -1,0 +1,24 @@
+autopep8==1.6.0
+flake8==4.0.1
+mccabe==0.6.1
+pycodestyle==2.8.0
+pyflakes==2.4.0
+python-pdf==0.39
+toml==0.10.2
+
+
+python -m venv env_projeto1
+which python
+which pip
+
+deactivate
+
+#virtualenv
+pip install virtualenv
+virtualenv env_projeto2
+pip list
+source env_projeto2/bin/activate
+pip list
+ctrl+shift+p > python interpreter > projeto2 > bin > python3.8
+abrir entao o interpretador
+

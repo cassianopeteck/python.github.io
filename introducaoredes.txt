@@ -1,0 +1,73 @@
+Cliente: dispositivo na qual tem um software que fazem uma requisição ao servidor que levam a conexão Peer to peer.
+software cliente também é um software servidor.
+
+Internet: 
+
+Servidor: dispositivo que tem um software que recebe a requisição do cliente e retorna algo para ele.
+Este exige um software de servidor Web para que possa prover serviços web à rede.
+
+Hosts ou Endpoints: Todos os computadores que estão conectados a uma rede e participam diretamente da comunicação da rede.
+
+Arquitetura de redes: Tolerância a falhas, escalabilidade, Qualidade de serviços (QoS), Segurança; Toda rede
+precisa de um padrão, uma arquitetura, para que funcione com eficiência e possa crescer. Apoiam-se a infraestrutura
+e os serviços programados e as regras, ou protocolos, que movimentam os dados de rede.
+
+Protocolos: para que os dispositivos finais possam se comunicar através de uma rede, cada dispositivo deve cumprir
+o mesmo conjunto de regras. Essas regras são os protocolos e eles têm muitas funcionalidades em um rede.
+Existem diversos modelos, mas os mais utilizados são os modelos OSI e o TCP/IP
+OSI: Aplicação (mais próxima do usuário final), Apresentação (formatar e apresentar os dados, compactar e descompactar os dados, criptografar e descriptografar), Sessão (criar e manter diálogos entre a origem e destino, manterá estes diálogos e poderá reiniciá-los após muito tempo inativos), Transporte(TCP é mais lento que o UDP, pois o primeiro confere se está tudo certo com os dados; não sabe quem é o dispositivo de destino, sabe que tem que enviar, tentar rastrear as conversações, rejeitar um dado quando for corrompido, cuida da segmentação destes dados), Rede(identifica para quem vai determinado dado, permitir que os dispositivos finais possam trocar dados entre eles), Enlace de Dados (hardware possa se comunicar com um software, possam acessar a midia)e Física (telecomunicações, elétrica e eletrônica - consistem em circuitos eletrônicos, meios físicos, o Hardware, os conectores,
+cabo ethernet, a placa wifi, protocolo ethernet devem ser melhorados por organizações de um país, dispositivos intermediários).
+TCP/IP: Aplicação (Aplicação, apresentação e Sessão), Transporte, Rede, Acesso à rede (enlace de dados e física).
+
+URL: localizador de recursos universais - associar o endereço com o recurso na Internet
+requisição através do protocolo HTTPS:
+uri: a URL é uma URI pois cada endereço que digitar na barra de endereços do Browser deve te entregar uma 
+página diferente. É um identificador único. Servidores DNS que cuidam de vincular o endereço com o seu IP.
+
+ipinfo.io/142.251.132.46
+
+protocolo HTTP: é a camada mais próxima do usuário, Hypertext Transfer Protocol, é uma sequência de transações de rede
+de requisição-resposta. Um cliente HTTP inicia uma requisição estabelecendo uma conexão Transmission Control Protocol (TCP)
+para uma porta particular de um servidor (normalmente a porta 80.)
+
+HTTPS: é uma implementação do protocolo HTTP sobre uma camada adicional de segurança que utiliza o protocolo ssl/tls
+TLS é especialmente adequado a HTTP porque pode fornecer proteção mesmo se apenas uma das partes comunicantes esteja autenticada.
+
+Métodos HTTP: define nove métodos(GET, HEAD, POST, PUT, DELETE, TRACE, Options, Connect, PATCH) que indicam a ação a ser realizada no recurso especificado.
+O mínimo exigido pelo método HTTP é o GET e o HEAD.
+GET: requisita uma representação do recurso especificado. Deve apenas recuperar dados e não deve ter qualquer outro efeito.
+POST:Envia dados para serem processados para o recurso especificado.
+PUT:Editar um recurso
+DELETE:Exclusão de um recurso.
+
+Códigos de Status HTTP:
+Resposta de informação (100 e 199)
+Resposta de recurso (200 - 299)
+Redirecionamentos (300 - 399)
+Erros de cliente (400 - 499)
+Erros de servidor (500- 599)
+
+python -m http.server #abre direto na porta 8000
+python -m http.server 9000 #direcionei para a porta 9000
+
+
+git config --list
+git config --global user.name "kkk"
+git config --global user.email "kkk@gkkk"
+git add .
+git remote add origin 'https...'
+git commit -m "Alterei o título do meu site"
+git push -u origin master
+git clone git@github.com:....
+ssh-keygen -C "cassianopeteck@gmail.com"
+cd ~/.ssh
+ls
+id_rsa (private key)
+id_rsa (public key)
+known_hosts (todo mundo que eu aceitar acessar o meu conteúdo)
+ctrl+shift+C
+Settings no github
+SSH and GPG keys
+colocar o código acrescentado
+windows - precisa ativar o agente do ssh para fazer isto.
+git clone ...
